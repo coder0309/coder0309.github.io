@@ -79,10 +79,12 @@
 
 
 
+<meta name="description" content="半生累，净徒然。碑文完美有谁看？">
 <meta property="og:type" content="website">
 <meta property="og:title" content="home">
 <meta property="og:url" content="http://example.com/home/index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="半生累，净徒然。碑文完美有谁看？">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-02-22T09:00:04.000Z">
 <meta property="article:modified_time" content="2021-02-22T09:47:37.770Z">
@@ -129,6 +131,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8bf84c19ffca5ff522d67f3b70219c38";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -229,7 +241,7 @@
       
         
         <li class="menu-item menu-item-commonweal">
-          <a href="/404/index" rel="section">
+          <a href="/404.html" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
             
@@ -295,6 +307,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -347,6 +362,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/coder0309" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:290778643@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -535,6 +566,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'Ic40l6yAJ7xpXF8yA5ysAbij-gzGzoHsz',
+        appKey: 'NLpxKRYUQ2iegMUzz7X6XvvD',
+        placeholder: '说点什么吧',
+        avatar:'/uploads/avatar.jpg',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
